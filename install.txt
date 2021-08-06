@@ -1,0 +1,25 @@
+
+linux
+sudo pip3 install -r /run/media/ruan/data2/workspace/tmp/flask/z_babel/requirements.txt
+
+
+
+
+
+pybabel extract -F babel.cfg -o messages.pot --input-dirs=.
+##copy file to app
+pybabel init -i messages.pot -d translations -l es
+pybabel compile -d translations -l es
+
+
+
+
+
+
+
+
+
+
+###
+https://flask-babel.tkte.ch/
+https://medium.datadriveninvestor.com/translating-your-web-app-via-flask-babel-a1561376256c
